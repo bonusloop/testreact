@@ -1,3 +1,30 @@
 .App {
-  
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 304px 1fr;
+    grid-template-rows: 80px 1fr;
+    grid-template-areas: 
+    "s h"
+    "s m";
+    background-color: #F2F2F2;
+}
+
+.hader {
+    grid-area: h;
+}
+
+.sidebar {
+    grid-area: s;
+    background-color: #F8F8F8;
+}
+
+.main {
+    grid-area: m;
+    padding: 0 32px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 336px 336px 336px;
+    gap: 32px;
 }

@@ -11,7 +11,18 @@ import img6 from './components/assets/image/image6.jpg';
 function App() {
   return (
     <div className="App">
-      <div className="wrapper">
+      <header className="hadeer">Hadeer</header>
+
+      <aside className="sidebar">Sidebar</aside>
+
+      <main className="main">
+        <section className="headlners" >
+        
+          <h2 className="title">Today’s Headlines</h2>
+        
+        
+          
+          <div className="wrapper">
         <Headlaine thumbnail={img1} time="2:00 pm" like="10.8k" dislake="1.4k" label="BBC NEWS" title="Hate speech vs free speech"/>
         <Headlaine thumbnail={img2} time="2:00 pm" like="10.8k" dislake="3.4k" label="BBC NEWS" title="Ontario Liberal leadership"/>
         <Headlaine thumbnail={img3} time="2:00 pm" like="20.8k" dislake="1.1k" label="BBC NEWS" title="Victim of Scarborough"/>
@@ -19,6 +30,9 @@ function App() {
         <Headlaine thumbnail={img5} time="2:00 pm" like="10.8k" dislake="1.4k" label="CW6 NEWS" title="Mother of Stefanie Rengel"/>
         <Headlaine thumbnail={img6} time="2:00 pm" like="10.8k" dislake="1.4k" label="CNN NEWS" title="World Cup: Popular items"/>
       </div>
+        </section>
+
+      </main>
     </div>
   );
 }

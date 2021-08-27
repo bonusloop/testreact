@@ -1,9 +1,10 @@
-import React from 'react';
 import s from'./Headlaine.module.css';
 
 import like from '../assets/image/like.svg';
 import dislike from '../assets/image/dislike.svg';
-import time from '../assets/image/time.svg';
+
+import Label from '../label/Label';
+import Time from '../time/Time';
 
 function Headlaine(props) {
   return (
@@ -23,11 +24,8 @@ function Headlaine(props) {
             </div>
           
             <div className={s.wrapper}>
-              <span className={s.label}>{props.label}</span>
-                <div className={s.time}>
-                  <img className={s.timeIcon} src={time} alt="" />
-                  <span className={s.timeText}>{props.time}</span>
-                </div>
+              <Label label={props.label}/>
+                <Time time={props.time}/>
             </div>
           </div>
     </article>
