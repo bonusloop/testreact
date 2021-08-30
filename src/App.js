@@ -7,6 +7,7 @@ import img3 from './components/assets/image/image3.jpg';
 import img4 from './components/assets/image/image4.jpg';
 import img5 from './components/assets/image/image5.jpg';
 import img6 from './components/assets/image/image6.jpg';
+import Headertitle from './components/headertitle/Headertitle';
 
 function App() {
   return (
@@ -17,11 +18,10 @@ function App() {
 
       <main className="main">
         <section className="headlners" >
+
+        <Headertitle title="Today’s Headlines" icon="See all"/>
         
-          <h2 className="title">Today’s Headlines</h2>
         
-        
-          
           <div className="wrapper">
         <Headlaine thumbnail={img1} time="2:00 pm" like="10.8k" dislake="1.4k" label="BBC NEWS" title="Hate speech vs free speech"/>
         <Headlaine thumbnail={img2} time="2:00 pm" like="10.8k" dislake="3.4k" label="BBC NEWS" title="Ontario Liberal leadership"/>
