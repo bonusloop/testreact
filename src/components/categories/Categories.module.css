@@ -1,0 +1,14 @@
+.cardTitle {
+    font-size: 16px;
+    line-height: 24px;
+    color: #182135;
+}
+
+.categoriesCard {
+    width: 152px;
+    height: 158px;
+    display: grid;
+    justify-self: center;
+    align-content: center;
+    justify-items: center;
+}

@@ -32,3 +32,16 @@ body {
     grid-template-columns: 336px 336px 336px;
     gap: 32px;
 }
+
+.navigationTop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 520px;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+}
+

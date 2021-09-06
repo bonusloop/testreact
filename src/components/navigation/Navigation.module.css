@@ -1,0 +1,14 @@
+.title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #182135;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navImg {
+    width: 24px;
+}

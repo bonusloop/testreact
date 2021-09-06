@@ -7,21 +7,45 @@ import img3 from './components/assets/image/image3.jpg';
 import img4 from './components/assets/image/image4.jpg';
 import img5 from './components/assets/image/image5.jpg';
 import img6 from './components/assets/image/image6.jpg';
+import navimg0 from './components/assets/image/navimg0.svg';
+import navimg1 from './components/assets/image/navimg1.svg';
+import navimg3 from './components/assets/image/navimg3.svg';
+import abc from './components/assets/image/categories/abc.svg';
+import al from './components/assets/image/categories/al.svg';
+import bbc from './components/assets/image/categories/bbc.svg';
+import cnn from './components/assets/image/categories/cnn.svg';
+import cw6 from './components/assets/image/categories/cw6.svg';
+import fox from './components/assets/image/categories/fox.svg';
 import Headertitle from './components/headertitle/Headertitle';
+import Navigation from './components/navigation/Navigation';
+import Categories from './components/categories/Categories';
 
 function App() {
   return (
     <div className="App">
-      <header className="hadeer">Hadeer</header>
+      <header className="hadeer">
+      <div className="navigationTop">
+          <Navigation thumbnail={navimg0} title="San Francisco, California"/>
+          <Navigation thumbnail={navimg1} title="Analysis"/>
+          <Navigation thumbnail={navimg3} title="Monthly"/>
+        </div>
+      </header>
+       
 
       <aside className="sidebar">Sidebar</aside>
 
       <main className="main">
         <section className="headlners" >
-
+        <Headertitle title="Explore Channels" icon="See all"/>
+          <div className="categories">
+            <Categories style={{marginBottom: 17}} thumbnail={fox} cardTitle="FOX NEWS"/>
+            <Categories style={{marginBottom: 39}} thumbnail={cw6} cardTitle="CW6 NEWS"/>
+            <Categories style={{marginBottom: 39}} thumbnail={abc} cardTitle="ABC NEWS"/>
+            <Categories style={{marginBottom: 17}} thumbnail={al} cardTitle="AL JAZEERA"/>
+            <Categories style={{marginBottom: 39}} thumbnail={bbc} cardTitle="BBC NEWS"/>
+            <Categories style={{marginBottom: 38}} thumbnail={cnn} cardTitle="CNN NEWS"/>
+          </div>
         <Headertitle title="Today’s Headlines" icon="See all"/>
-        
-        
           <div className="wrapper">
         <Headlaine thumbnail={img1} time="2:00 pm" like="10.8k" dislake="1.4k" label="BBC NEWS" title="Hate speech vs free speech"/>
         <Headlaine thumbnail={img2} time="2:00 pm" like="10.8k" dislake="3.4k" label="BBC NEWS" title="Ontario Liberal leadership"/>
@@ -30,6 +54,7 @@ function App() {
         <Headlaine thumbnail={img5} time="2:00 pm" like="10.8k" dislake="1.4k" label="CW6 NEWS" title="Mother of Stefanie Rengel"/>
         <Headlaine thumbnail={img6} time="2:00 pm" like="10.8k" dislake="1.4k" label="CNN NEWS" title="World Cup: Popular items"/>
       </div>
+        <Headertitle title="Featured News" icon="See all"/> 
         </section>
 
       </main>
