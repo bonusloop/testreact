@@ -1,0 +1,30 @@
+.news {
+    max-width: 340px;
+}
+
+.wrapper {
+    max-height: 48px;
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: 224px 1fr;
+    grid-column-gap: 30px;
+}
+
+.imgNews {
+    border-radius: 12px;
+}
+
+.rightdlock {
+    max-height: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+}
+

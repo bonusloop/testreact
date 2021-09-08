@@ -7,18 +7,27 @@ import img3 from './components/assets/image/image3.jpg';
 import img4 from './components/assets/image/image4.jpg';
 import img5 from './components/assets/image/image5.jpg';
 import img6 from './components/assets/image/image6.jpg';
+
 import navimg0 from './components/assets/image/navimg0.svg';
 import navimg1 from './components/assets/image/navimg1.svg';
 import navimg3 from './components/assets/image/navimg3.svg';
+
 import abc from './components/assets/image/categories/abc.svg';
 import al from './components/assets/image/categories/al.svg';
 import bbc from './components/assets/image/categories/bbc.svg';
 import cnn from './components/assets/image/categories/cnn.svg';
 import cw6 from './components/assets/image/categories/cw6.svg';
 import fox from './components/assets/image/categories/fox.svg';
+
+import news1 from './components/assets/image/news/news1.png';
+import news2 from './components/assets/image/news/news2.png';
+import news3 from './components/assets/image/news/news3.png';
+
 import Headertitle from './components/headertitle/Headertitle';
 import Navigation from './components/navigation/Navigation';
 import Categories from './components/categories/Categories';
+import News from './components/news/News';
+
 
 function App() {
   return (
@@ -53,8 +62,13 @@ function App() {
         <Headlaine thumbnail={img4} time="2:00 pm" like="0" dislake="20k" label="ABC NEWS" title="Mother who left her baby"/>
         <Headlaine thumbnail={img5} time="2:00 pm" like="10.8k" dislake="1.4k" label="CW6 NEWS" title="Mother of Stefanie Rengel"/>
         <Headlaine thumbnail={img6} time="2:00 pm" like="10.8k" dislake="1.4k" label="CNN NEWS" title="World Cup: Popular items"/>
-      </div>
+          </div>
         <Headertitle title="Featured News" icon="See all"/> 
+        <div className="featurenews">
+          <News newsimg={news1} title="Travellers to pay more than $2K, Trudeau says" label="FOX NEWS" time="2:00 pm"/>
+          <News newsimg={news2} title="Myanmar’s military seizes control of country ov  er..." label="CNN NEWS" time="2:00 pm"/>
+          <News newsimg={news3} title="Pressure builds for Biden to cancel other pipeline..." label="BBC NEWS" time="2:00 pm"/>
+        </div>
         </section>
 
       </main>
