@@ -6,7 +6,7 @@ import Time from '../time/Time';
 function News(props) {
     return (
         <article className={s.news}>
-            <img className={s.imgNews} src={props.newsimg} alt="image" />
+            <img className={s.imgNews} src={props.newsimg} alt="" />
             <div className={s.wrapper}>
                 <h1 className={s.title}>{props.title}</h1>
                 <div className={s.rightdlock}>

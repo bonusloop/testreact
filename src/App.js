@@ -23,10 +23,21 @@ import news1 from './components/assets/image/news/news1.png';
 import news2 from './components/assets/image/news/news2.png';
 import news3 from './components/assets/image/news/news3.png';
 
+import logo from './components/assets/image/logo.png';
+
+import icon1 from'./components/assets/image/icons/icon1.svg';
+import icon2 from'./components/assets/image/icons/icon2.svg';
+import icon3 from'./components/assets/image/icons/icon3.svg';
+import icon4 from'./components/assets/image/icons/icon4.svg';
+import icon5 from'./components/assets/image/icons/icon5.svg';
+import icon6 from'./components/assets/image/icons/icon6.svg';
+import icon7 from'./components/assets/image/icons/icon7.svg';
+
 import Headertitle from './components/headertitle/Headertitle';
 import Navigation from './components/navigation/Navigation';
 import Categories from './components/categories/Categories';
 import News from './components/news/News';
+import Icon from './components/icon/Icon';
 
 
 function App() {
@@ -41,7 +52,22 @@ function App() {
       </header>
        
 
-      <aside className="sidebar">Sidebar</aside>
+      <aside className="sidebar">
+        <img className="logo" src={logo} alt="logo" />
+        <div className="items">
+          <div className="item">
+            <Icon thumbnail={icon1} title="Home"/>
+            <Icon thumbnail={icon2} title="Explore"/>
+            <Icon thumbnail={icon3} title="Saved"/>
+            <Icon thumbnail={icon4} title="Subscriptions"/>
+            <Icon thumbnail={icon5} title="Messagese"/>
+            <Icon thumbnail={icon6} title="Settings"/>
+          </div>
+          <div className="itemBottom">
+            <Icon thumbnail={icon7} title="Logout"/>
+          </div>
+        </div>
+      </aside>
 
       <main className="main">
         <section className="headlners" >

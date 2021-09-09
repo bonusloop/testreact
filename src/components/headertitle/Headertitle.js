@@ -6,8 +6,8 @@ function Headertitle(props) {
     return (
         <div className={s.headertitle}>
             <h2 className={s.title}>{props.title}</h2>
-            <a href="" className={s.icon}>{props.icon}
-                <img src={icon} alt="" className={s.iconImg}/>
+            <a href="https://aliexpress.ru/" className={s.icon}>{props.icon}
+                <img src={icon} className={s.iconImg} alt=""/>
             </a>
         </div>
     );

@@ -51,3 +51,11 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+.items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 510px;    
+    padding: 34px 0;
+  }
